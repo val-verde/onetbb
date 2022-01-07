@@ -57,8 +57,6 @@ __ZTIN3tbb6detail2r112missing_waitE
 __ZTVN3tbb6detail2r112missing_waitE
 __ZTIN3tbb6detail2r110user_abortE
 __ZTVN3tbb6detail2r110user_abortE
-__ZTIN3tbb6detail2r111unsafe_waitE
-__ZTVN3tbb6detail2r111unsafe_waitE
 
 # RTM Mutex (rtm_mutex.cpp)
 __ZN3tbb6detail2r17acquireERNS0_2d19rtm_mutexERNS3_11scoped_lockEb
