@@ -219,6 +219,9 @@ inline void prolonged_pause_impl() {
 }
 #endif
 
+#if __TBB_WAITPKG_INTRINSICS_PRESENT && (_WIN32 || _WIN64 || __unix__) && (__TBB_x86_32 || __TBB_x86_64)
+__attribute__((target("waitpkg")))
+#endif
 inline void prolonged_pause() {
 #if __TBB_WAITPKG_INTRINSICS_PRESENT
     if (governor::wait_package_enabled()) {
